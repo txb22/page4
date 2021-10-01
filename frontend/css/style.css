@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 16px;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../font/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: FontAwsome;
+  src: url(../css/fontawesome-free-5.15.4-web/css/all.min.css);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+.section-all {
+  padding: 2rem 0;
+}
+.section-slide {
+  background: #def3f2;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-wrapper {
+  padding-bottom: 3rem;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f7ba0f;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-text {
+  box-shadow: 4px 4px 10px rgba(77, 137, 3, 0.2);
+  padding: 1.5rem 1rem;
+  position: relative;
+  background: #fff;
+  border-top: 0.25rem solid #071d61;
+  border-radius: 0.25rem;
+}
+.box-text::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  z-index: 0;
+  height: 0;
+  width: 0;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  border-width: 1.5rem 1.5rem 1.5rem;
+  transform: rotate(270deg);
+}
+.box-text::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/quote\ 3.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  left: 90%;
+}
+.box-user .box-img img {
+  border-radius: 50%;
+}
+.text-user {
+  text-align: left;
+}
+.text-user .name {
+  font-family: SourceSansPro;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #071d61;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.text-user .work {
+  font-family: Roboto;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width: 480px) {
+  .swiper-slide {
+    width: 16rem;
+  }
+}
