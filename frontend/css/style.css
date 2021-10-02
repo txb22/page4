@@ -25,6 +25,20 @@ body {
 .section-all {
   padding: 2rem 0;
 }
+.title_section1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #0095da;
+  margin-bottom: 0;
+}
+.title_section2 {
+  font-family: SourceSansPro;
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: #071d61;
+}
 .section-slide {
   background: #def3f2;
 }
@@ -103,6 +117,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 .box-user .box-img img {
   border-radius: 50%;
+  max-width: 4rem;
+  max-height: 4rem;
+  object-fit: cover;
+}
+.box-user .box-img {
+  display: flex;
+  justify-content: center;
 }
 .text-user {
   text-align: left;
